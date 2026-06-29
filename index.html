@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="bg-animation">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+<nav>
+    <h2>Shaikh Irfan</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Irfan Shaikh</span></h1>
+            <h2 id="typing"></h2>
+            <p>Passionate about Linux, Docker, Kubernetes, Cloud & Automation.</p>
+
+            <a href="mailto:shaikhirfan08263@gmail.com" class="btn">
+                Hire Me
+            </a>
+            <a href="shaikhirfan_CV.pdf" download class="btn">
+    Download Resume
+</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="irfan.jpeg" alt="Profile Photo">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="hidden">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+            I am a learning  DevOps  passionate about Linux,
+            CI/CD, Kubernetes and Cloud Infrastructure.
+        </p>
+    </div>
+</section>
+
+<section id="skills" class="hidden">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skill-card" onclick="toggleSkill('linux')">Linux</div>
+    <div id="linux" class="skill-details">
+        <p>File Management</p>
+        <p>User Management</p>
+        <p>Permission Management</p>
+        <p>Process Management</p>
+        <p>Service Management</p>
+        <p>Networking</p>
+    </div>
+
+    <div class="skill-card" onclick="toggleSkill('docker')">Docker</div>
+    <div id="docker" class="skill-details">
+        <p>Images</p>
+        <p>Containers</p>
+        <p>Volumes</p>
+        <p>Dockerfile</p>
+        <p>Networking</p>
+    </div>
+
+    <div class="skill-card" onclick="toggleSkill('k8s')">Kubernetes</div>
+    <div id="k8s" class="skill-details">
+        <p>Pods</p>
+        <p>Deployments</p>
+        <p>Services</p>
+        <p>ConfigMaps</p>
+        <p>Secrets</p>
+    </div>
+    <div class="skill-card" onclick="toggleSkill('aws')">AWS</div>
+<div id="aws" class="skill-details">
+    <p>EC2</p>
+    <p>S3</p>
+    <p>IAM</p>
+    <p>VPC</p>
+    <p>Load Balancer</p>
+    <p>CloudWatch</p>
+</div>
+
+<div class="skill-card" onclick="toggleSkill('jenkins')">Jenkins</div>
+<div id="jenkins" class="skill-details">
+    <p>CI/CD Pipeline</p>
+    <p>Build Automation</p>
+    <p>Plugins</p>
+    <p>Agent Nodes</p>
+    <p>Pipeline Stages</p>
+</div>
+
+<div class="skill-card" onclick="toggleSkill('terraform')">Terraform</div>
+<div id="terraform" class="skill-details">
+    <p>Infrastructure as Code</p>
+    <p>Providers</p>
+    <p>Resources</p>
+    <p>State Management</p>
+    <p>Modules</p>
+</div>
+</section>
+
+<section id="projects" class="hidden">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+        <div class="card">SSH Server Setup</div>
+        <div class="card">Kubernetes Deployment</div>
+        <div class="card">Nginx Web Server</div>
+    </div>
+</section>
+
+
+    <section id="contact" class="hidden">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="social-icons">
+        <a href="mailto:shaikhirfan08263@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+       <a href="https://www.linkedin.com/in/irfan-shaikh-a590772bb/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+</a>
+
+        <a href="https://github.com/shaikhirfan82" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://wa.me/8263058469" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+</section>
+<footer>
+    © 2026 Irfan Shaikh | DevOps Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
